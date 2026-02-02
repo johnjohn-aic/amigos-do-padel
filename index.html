@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigos do Padel de Lisboa 🎾</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="%23ffffff10"/><circle cx="80" cy="40" r="1.5" fill="%23ffffff08"/><circle cx="40" cy="70" r="2.5" fill="%23ffffff05"/><circle cx="90" cy="80" r="1" fill="%23ffffff10"/></svg>');
+        }
+        
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: #a0aec0;
+            font-weight: 300;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .founders-section {
+            background: rgba(255,255,255,0.05);
+            border-radius: 24px;
+            padding: 40px;
+            margin: -20px 20px 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .founders-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 16px;
+            margin: 0 auto 30px;
+            display: block;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+        }
+        
+        .founders-caption {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #cbd5e0;
+            font-style: italic;
+        }
+        
+        .founders-names {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #00d4ff;
+        }
+        
+        .story-section {
+            padding: 60px 20px;
+        }
+        
+        .story-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #00d4ff;
+        }
+        
+        .story-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #e2e8f0;
+            text-align: justify;
+        }
+        
+        .story-text p {
+            margin-bottom: 20px;
+        }
+        
+        .highlight {
+            background: linear-gradient(90deg, #7c3aed, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+        }
+        
+        .values-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 20px 80px;
+        }
+        
+        .value-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,212,255,0.15);
+        }
+        
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .value-card h3 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+        
+        .value-card p {
+            color: #a0aec0;
+            font-size: 0.95rem;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(124, 58, 237, 0.1);
+        }
+        
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 18px 50px;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(0,212,255,0.4);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="logo">🎾</div>
+        <h1>Amigos do Padel de Lisboa</h1>
+        <p class="tagline">Onde a amizade encontra a raquete</p>
+    </section>
+    
+    <div class="container">
+        <section class="founders-section">
+            <img src="fundadores.jpg" alt="Os fundadores dos Amigos do Padel" class="founders-image">
+            <p class="founders-caption">"O momento histórico: a fundação oficial no restaurante Circo, Lisboa — Janeiro de 2025"</p>
+            <p class="founders-names">🏆 Guilherme "O Mestre" (líder) & Eric "O Estrategista"</p>
+        </section>
+        
+        <section class="story-section">
+            <h2>📖 A Nossa História</h2>
+            <div class="story-text">
+                <p>
+                    Tudo começou numa tarde chuvosa de Lisboa, quando dois amigos — um com barba preta imponente e outro com o cabelo a ganhar tons de sabedoria — descobriram que partilhavam a mesma paixão: <span class="highlight">o padel</span>. Não eram os mais experientes, não eram os mais rápidos, mas tinham algo que nenhum campeonato pode comprar: <span class="highlight">vontade de aprender e rir no processo</span>.
+                </p>
+                <p>
+                    <strong>Guilherme</strong>, o da barba escura e sorriso contagiante, auto-proclamou-se líder do grupo dos "sub-experientes" — uma categoria que inventaram para descrever jogadores que ainda batem na rede mas celebram como se tivessem ganho Roland Garros. <strong>Eric</strong>, o estrategista do grupo, trouxe a visão: criar uma comunidade onde o nível técnico importa menos que a camaradagem.
+                </p>
+                <p>
+                    Foi ali, entre uma mousse de chocolate e uma Coca-Cola gelada, no histórico restaurante Circo em Lisboa, que nasceram oficialmente os <span class="highlight">Amigos do Padel de Lisboa</span>. Um pacto selado com guardanapos assinados e a promessa de que "ninguém fica sem parceiro para jogar".
+                </p>
+                <p>
+                    Hoje, somos uma comunidade crescente de entusiastas que acreditam que o padel é mais do que um desporto — é uma desculpa perfeita para fazer amigos, queimar umas calorias, e depois repor todas num bom almoço. 🍫
+                </p>
+            </div>
+        </section>
+    </div>
+    
+    <section class="values-section container">
+        <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3>Comunidade Primeiro</h3>
+            <p>Acima de qualquer resultado, valorizamos as amizades que construímos dentro e fora do court.</p>
+        </div>
+        <div class="value-card">
+            <div class="value-icon">📈</div>
+            <h3>Evolução Contínua</h3>
+            <p>Começámos sub-experientes e assim continuaremos — mas cada dia um pouco menos sub.</p>
+        </div>
+        <div class="value-card">
+            <div class="value-icon">🎉</div>
+            <h3>Diversão Garantida</h3>
+            <p>Se não riste durante o jogo, não valeu. Levamos o padel a sério, mas não tanto assim.</p>
+        </div>
+    </section>
+    
+    <section class="cta-section">
+        <h2>🚀 Junta-te a Nós!</h2>
+        <p style="color: #a0aec0; margin-bottom: 30px;">Lisboa precisa de mais jogadores que valorizem a diversão acima da perfeição.</p>
+        <a href="https://wa.me/351900000000" class="cta-button">Entrar no Grupo WhatsApp</a>
+    </section>
+    
+    <footer>
+        <p>© 2025 Amigos do Padel de Lisboa · Fundado com 🎾 e 🍫</p>
+        <p>Uma iniciativa da comunidade lisboeta de padel</p>
+    </footer>
+</body>
+</html>
